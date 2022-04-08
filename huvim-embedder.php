@@ -10,28 +10,14 @@
 	Text Domain: huivm-embedder
 */
 
-/* Update Checker */
-require 'plugin-update-checker/plugin-update-checker.php';
-$myUpdateChecker = Puc_v4_Factory::buildUpdateChecker(
-	'https://github.com/HU-IvM/HU-IvM-Embedder',
-	__FILE__,
-	'huivm-embedder'
-);
-
-//Set the branch that contains the stable release.
-//$myUpdateChecker->setBranch('stable-branch-name');
-$myUpdateChecker->getVcsApi()->enableReleaseAssets();
-
+/* Plugin Setup */
 /**
  * Access this plugin’s working instance
  *
  * @wp-hook plugins_loaded
  * @return  object of this class
  */
-public function plugin_setup()
-{
-    add_filter( 'upgrader_source_selection', array( $this, 'rename_github_zip' ), 1, 3);
-}
+add_filter( 'upgrader_source_selection', array( $this, 'rename_github_zip' ), 1, 3);
 
 /**
  * Removes the prefix "-master" when updating from GitHub zip files
@@ -53,6 +39,19 @@ public function rename_github_zip( $source, $remote_source, $thiz )
     rename( $source, $newsource );
     return $newsource;
 }
+
+/* Update Checker */
+require 'plugin-update-checker/plugin-update-checker.php';
+$myUpdateChecker = Puc_v4_Factory::buildUpdateChecker(
+	'https://github.com/HU-IvM/HU-IvM-Embedder',
+	__FILE__,
+	'huivm-embedder'
+);
+
+//Set the branch that contains the stable release.
+//$myUpdateChecker->setBranch('stable-branch-name');
+$myUpdateChecker->getVcsApi()->enableReleaseAssets();
+
 
 
 /* Flourish */
