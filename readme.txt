@@ -8,6 +8,9 @@ Plugin voor het embedden van diverse externe media op onze eigen WordPress insta
 
 == Changelog ==
 
+= 2.0.1 - 08-04-2022 =
+* Plugin Directory Name fix. [RB]
+
 = 2.0.0 - 08-04-2022 =
 * Plugin Update Checker toegevoegd ten behoeve van het automatisch updaten van de plugin op alle installaties [RB]
 
