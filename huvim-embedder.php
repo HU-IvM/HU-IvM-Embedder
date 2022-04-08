@@ -10,18 +10,7 @@
 	Text Domain: huivm-embedder
 */
 
-/* Update Checker */
-require 'plugin-update-checker/plugin-update-checker.php';
-$myUpdateChecker = Puc_v4_Factory::buildUpdateChecker(
-	'https://github.com/HU-IvM/HU-IvM-Embedder',
-	__FILE__,
-	'huivm-embedder'
-);
-
-//Set the branch that contains the stable release.
-//$myUpdateChecker->setBranch('stable-branch-name');
-$myUpdateChecker->getVcsApi()->enableReleaseAssets();
-
+/* Plugin Setup */
 /**
  * Access this plugin’s working instance
  *
@@ -53,6 +42,19 @@ public function rename_github_zip( $source, $remote_source, $thiz )
     rename( $source, $newsource );
     return $newsource;
 }
+
+/* Update Checker */
+require 'plugin-update-checker/plugin-update-checker.php';
+$myUpdateChecker = Puc_v4_Factory::buildUpdateChecker(
+	'https://github.com/HU-IvM/HU-IvM-Embedder',
+	__FILE__,
+	'huivm-embedder'
+);
+
+//Set the branch that contains the stable release.
+//$myUpdateChecker->setBranch('stable-branch-name');
+$myUpdateChecker->getVcsApi()->enableReleaseAssets();
+
 
 
 /* Flourish */
