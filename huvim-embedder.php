@@ -34,6 +34,7 @@ public function rename_github_zip( $source, $remote_source, $thiz )
     $path_parts = pathinfo( $source );
     $newsource = trailingslashit( $path_parts['dirname'] ) . trailingslashit( 'huivm-embedder' );
     rename( $source, $newsource );
+	echo $newsource;
     return $newsource;
 }
 
