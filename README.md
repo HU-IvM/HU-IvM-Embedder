@@ -21,12 +21,10 @@ Plaats in het artikel de volgende embedcode:
 ```
 [flourish id=ABCXYZ]
 ```
-Vervang de ABCXYZ met de visualisatie ID uit de URL.
+Vervang de `ABCXYZ` met de visualisatie ID uit de URL.
 
 Voorbeeld
-De URL:
-https://public.flourish.studio/visualisation/2253288/
-geeft als embedcode:
+De URL: `https://public.flourish.studio/visualisation/2253288/` geeft als embedcode:
 ```
 [flourish id=2253288]
 ```
@@ -36,12 +34,10 @@ Plaats in het artikel de volgende embedcode:
 ```
 [localfocus id=ABCXYZ]
 ```
-Vervang de ABCXYZ met de widget-ID uit de URL.
+Vervang de `ABCXYZ` met de widget-ID uit de URL.
 
 Voorbeeld
-De URL:
-https://localfocuswidgets.net/5ee7706228e28
-geeft als embedcode:
+De URL: `https://localfocuswidgets.net/5ee7706228e28` geeft als embedcode:
 ```
 [localfocus id=5ee7706228e28]
 ```
@@ -51,12 +47,10 @@ Plaats in het artikel de volgende embedcode:
 ```
 [knightlab id=ABCXYZ]
 ```
-Vervang de ABCXYZ met de source ID uit de URL.
+Vervang de `ABCXYZ` met de source ID uit de URL.
 
 Voorbeeld
-De URL:
-https://cdn.knightlab.com/libs/timeline3/latest/embed/index.html?source=1xuY4upIooEeszZ_lCmeNx24eSFWe0rHe9ZdqH2xqVNk&font=Default&lang=en&initial_zoom=2&height=100%
-geeft als embedcode:
+De URL: `https://cdn.knightlab.com/libs/timeline3/latest/embed/index.html?source=1xuY4upIooEeszZ_lCmeNx24eSFWe0rHe9ZdqH2xqVNk&font=Default&lang=en&initial_zoom=2&height=100% `geeft als embedcode:
 ```
 [knightlab id=1xuY4upIooEeszZ_lCmeNx24eSFWe0rHe9ZdqH2xqVNk]
 ```
