@@ -2,13 +2,26 @@
 /**
 	Plugin Name: HU-IvM Embedder
 	Description: Plugin voor het embedden van diverse externe media, geschreven voor HU-IvM.
-	Version: 1.4.4
-	Plugin URI: https://huivm.nl/embedder.html
+	Version: 2.0.0
+	Plugin URI: https://github.com/HU-IvM/HU-IvM-Embedder
 	Author: Ronald Broekhuizen & Twan Verstegen
 	Author URI: https://www.media-engineers.nl
 	License: GPLv2
 	Text Domain: huivm-embedder
 */
+
+/* Update Checker */
+require 'plugin-update-checker/plugin-update-checker.php';
+$myUpdateChecker = Puc_v4_Factory::buildUpdateChecker(
+	'https://github.com/HU-IvM/HU-IvM-Embedder',
+	__FILE__,
+	'huivm-embedder'
+);
+
+//Set the branch that contains the stable release.
+//$myUpdateChecker->setBranch('stable-branch-name');
+$myUpdateChecker->getVcsApi()->enableReleaseAssets();
+
 
 /* Flourish */
 

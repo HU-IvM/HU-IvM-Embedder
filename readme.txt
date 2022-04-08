@@ -7,6 +7,10 @@ Stable tag: 1.4.4
 Plugin voor het embedden van diverse externe media op onze eigen WordPress installaties, geschreven voor HU-IvM.
 
 == Changelog ==
+
+= 2.0.0 - 08-04-2022 =
+* Plugin Update Checker toegevoegd ten behoeve van het automatisch updaten van de plugin op alle installaties [RB]
+
 = 1.4.4 - 05-04-2022 =
 * AudioPlayer ID vervangen. [RB]
   We hebben nu een eigen audio-player waar we de settings van kunnen laten wijzigen.
