@@ -31,9 +31,6 @@ add_filter( 'upgrader_source_selection', array( $this, 'rename_github_zip' ), 1,
  */
 public function rename_github_zip( $source, $remote_source, $thiz )
 {
-    if(  strpos( $source, 'huivm-embedder') === false )
-        return $source;
-
     $path_parts = pathinfo( $source );
     $newsource = trailingslashit( $path_parts['dirname'] ) . trailingslashit( 'huivm-embedder' );
     rename( $source, $newsource );
