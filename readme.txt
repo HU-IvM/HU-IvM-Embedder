@@ -8,6 +8,9 @@ Plugin voor het embedden van diverse externe media op onze eigen WordPress insta
 
 == Changelog ==
 
+= 2.1.0 - 30-05-2022 =
+* Classes toegevoegd aan div's van HU MAM en Knightlab. [RB]
+
 = 2.0.1 - 08-04-2022 =
 * Plugin Directory Name fix. [RB]
 
